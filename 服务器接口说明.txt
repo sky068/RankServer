@@ -1,0 +1,25 @@
+
+// 获得sid
+curl -X POST http://localhost:3000/login
+
+
+// 绑定Fb 尚未获得sid
+curl -l -H "Content-type: application/json" -X POST -d '{"fbid":13521389587,"fbicon":"xxx.png", "fbname":"sky"}' http://localhost:3000/bind_fb 
+
+// 绑定Fb 已经获得sid
+curl -l -H "Content-type: application/json" -X POST -d '{"sid":10000000,"fbid":13521389587,"fbicon":"xxx.png", "fbname":"jim"}' http://localhost:3000/bind_fb 
+
+// 修改名字
+curl -l -H "Content-type: application/json" -X POST -d '{"fbid":13521389587, "fbname":"xoxo"}' http://localhost:3000/update_name 
+
+// 修改图像
+curl -l -H "Content-type: application/json" -X POST -d '{"fbid":13521389587, "fbicon":"xoxo.png"}' http://localhost:3000/update_icon
+
+// 上传分数
+curl -l -H "Content-type: application/json" -X POST -d '{"sid":10000000, "score":999}' http://localhost:3000/upload_score
+
+// 获取排行
+ curl -l -H "Content-type: application/json" -X POST -d '{"sid":10000000}' http://localhost:3000/get_rank
+
+ // 获取好友排行
+  curl -l -H "Content-type: application/json" -X POST -d '{"fid": 10000000, "friends": [10000000,10000001]}' http://localhost:3000/get_rank_friends
