@@ -10,8 +10,8 @@ function connectDb() {
   db = mysql.createConnection({
     host: "127.0.0.1",
     user: "root",
-    password: "803923",
-    database: "rollingball"
+    password: "Hawkis123",
+    database: "funny_farm_blast"
   });
   db.connect(handlerDbError);
   db.on("error", handlerDbError);
