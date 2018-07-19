@@ -5,6 +5,8 @@ let cookieParser = require('cookie-parser');
 let logger = require('morgan');
 let router = require('./routes/index');
 let mysql = require("mysql");
+let fs = require('fs');
+let fileStreamRotator = require('file-stream-rotator');
 
 function connectDb() {
   db = mysql.createConnection({
@@ -52,7 +54,17 @@ let app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
-app.use(logger('dev'));
+// 记录日志到文件
+let logDirectory = __dirname + "/logs";
+fs.existsSync(logDirectory) || fs.mkdirSync(logDirectory);
+let accessLogStream = fileStreamRotator.getStream({
+    filename: logDirectory + "/access-%DATE%.log",
+    frequency: "daily",
+    verbose: false
+});
+// app.use(logger('dev'));
+app.use(logger('combined', {stream: accessLogStream}));
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
