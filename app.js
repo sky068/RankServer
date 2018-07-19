@@ -46,6 +46,8 @@ db.query(
   }
 );
 
+console.log("server init begin!");
+
 let app = express();
 
 // view engine setup
@@ -100,5 +102,7 @@ app.use(function (err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+
+console.log("server init end!");
 
 module.exports = app;
