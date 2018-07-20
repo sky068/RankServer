@@ -8,45 +8,83 @@ let mysql = require("mysql");
 let fs = require('fs');
 let fileStreamRotator = require('file-stream-rotator');
 
-function connectDb() {
-  db = mysql.createConnection({
-    host: "127.0.0.1",
-    user: "root",
-    password: "Hawkis123",
-    database: "funny_farm_blast"
-  });
-  db.connect(handlerDbError);
-  db.on("error", handlerDbError);
-}
-function handlerDbError(err) {
-  if (err) {
-    if (err.code === "PROTOCOL_CONNECTION_LOST") {
-      connectDb();
-    } else {
-      console.error(err.stack || err);
-    }
-  }
-}
-let db = null;
-connectDb();
+let dbConfig = {
+  host: "127.0.0.1",
+  user: "root",
+  password: "803923",
+  database: "rollingball",
+  connectionLimit: 50,
+  queueLimit: 0,
+  waitForConnection: true
+};
 
-db.query(
-  "CREATE TABLE IF NOT EXISTS `rank` ("
-  + "`sid` int(8) unsigned NOT NULL AUTO_INCREMENT, "
-  + "`fbid` bigint(20) unsigned DEFAULT 0000000000, "
-  + "`fbicon` varchar(255) DEFAULT '', "
-  + "`fbname` varchar(100) DEFAULT '', "
-  + "`score` INT(10) unsigned DEFAULT 0, "
-  + "PRIMARY KEY(`sid`))"
-  + "AUTO_INCREMENT=10000000"
-  + ";",
-  (err) => {
-    if (err) {
-      console.log(err.message);
-      throw err;
-    }
+// function connectDb() {
+//   db = mysql.createConnection({
+//     host: "127.0.0.1",
+//     user: "root",
+//     password: "803923",
+//     database: "rollingball"
+//   });
+//   db.connect(handlerDbError);
+//   db.on("error", handlerDbError);
+// }
+// function handlerDbError(err) {
+//   if (err) {
+//     if (err.code === "PROTOCOL_CONNECTION_LOST") {
+//       connectDb();
+//     } else {
+//       console.error(err.stack || err);
+//     }
+//   }
+// }
+// let db = null;
+// connectDb();
+
+// db.query(
+//   "CREATE TABLE IF NOT EXISTS `rank` ("
+//   + "`sid` int(8) unsigned NOT NULL AUTO_INCREMENT, "
+//   + "`fbid` bigint(20) unsigned DEFAULT 0000000000, "
+//   + "`fbicon` varchar(255) DEFAULT '', "
+//   + "`fbname` varchar(100) DEFAULT '', "
+//   + "`score` INT(10) unsigned DEFAULT 0, "
+//   + "PRIMARY KEY(`sid`))"
+//   + "AUTO_INCREMENT=10000000"
+//   + ";",
+//   (err) => {
+//     if (err) {
+//       console.log(err.message);
+//       throw err;
+//     }
+//   }
+// );
+
+let database = mysql.createPool(dbConfig);
+
+database.getConnection((err, dbConn)=>{
+  if (err) {
+    throw err;
+  } else {
+    dbConn.query(
+      "CREATE TABLE IF NOT EXISTS `rank` ("
+      + "`sid` int(8) unsigned NOT NULL AUTO_INCREMENT, "
+      + "`fbid` bigint(20) unsigned DEFAULT 0000000000, "
+      + "`fbicon` varchar(255) DEFAULT '', "
+      + "`fbname` varchar(100) DEFAULT '', "
+      + "`score` INT(10) unsigned DEFAULT 0, "
+      + "PRIMARY KEY(`sid`))"
+      + "AUTO_INCREMENT=10000000"
+      + ";",
+      (err) => {
+        dbConn.release();
+        if (err) {
+          console.log(err.message);
+          throw err;
+        }
+      }
+    );
   }
-);
+});
+
 
 let app = express();
 
@@ -62,8 +100,8 @@ let accessLogStream = fileStreamRotator.getStream({
     frequency: "daily",
     verbose: false
 });
-// app.use(logger('dev'));
 app.use(logger('combined', {stream: accessLogStream}));
+// app.use(logger('dev'));
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
@@ -95,7 +133,7 @@ app.use(function (req, res, next) {
 
 // 设置/routes/index文件为总的路由控制文件
 // 在index文件中再进行统一的路由分发
-router(app, db);
+router(app, database);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
