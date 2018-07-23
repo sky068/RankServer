@@ -8,6 +8,21 @@ let mysql = require("mysql");
 let fs = require('fs');
 let fileStreamRotator = require('file-stream-rotator');
 
+// 记录日志到文件
+let logDirectory = __dirname + "/logs";
+fs.existsSync(logDirectory) || fs.mkdirSync(logDirectory);
+let accessLogStream = fileStreamRotator.getStream({
+  filename: logDirectory + "/access-%DATE%.log",
+  frequency: "daily",
+  verbose: false
+});
+
+let errLogStream = fileStreamRotator.getStream({
+  filename: logDirectory + "/error-%DATE%.log",
+  frequency: "daily",
+  verbose: false
+});
+
 let dbConfig = {
   host: "127.0.0.1",
   user: "root",
@@ -60,8 +75,10 @@ let dbConfig = {
 
 let database = mysql.createPool(dbConfig);
 
-database.getConnection((err, dbConn)=>{
+database.getConnection((err, dbConn) => {
   if (err) {
+    console.error(err.stack);
+    errLogStream.write(err.stack);
     throw err;
   } else {
     dbConn.query(
@@ -92,15 +109,8 @@ let app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
-// 记录日志到文件
-let logDirectory = __dirname + "/logs";
-fs.existsSync(logDirectory) || fs.mkdirSync(logDirectory);
-let accessLogStream = fileStreamRotator.getStream({
-    filename: logDirectory + "/access-%DATE%.log",
-    frequency: "daily",
-    verbose: false
-});
-app.use(logger('combined', {stream: accessLogStream}));
+// 记录日志
+app.use(logger('combined', { stream: accessLogStream }));
 // app.use(logger('dev'));
 
 app.use(express.json());
@@ -149,6 +159,15 @@ app.use(function (err, req, res, next) {
   // render the error page
   res.status(err.status || 500);
   res.render('error');
+
+  // 写入日志
+  let des = req.ip + " " + (new Date()).toString() + " " + req.method + " " + req.path + " " + req.protocol + "/" + req.httpVersion + " " + res.statusCode + " " + req.headers["user-agent"] + " ";
+  // des += "\n";
+  let errInfo = err.stack || err.message;
+  des += errInfo;
+  des += "\n";
+  errLogStream.write(des);
+  console.error(des);
 });
 
 module.exports = app;

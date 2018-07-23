@@ -12,11 +12,11 @@ function generateUserName() {
   return fbname;
 }
 
-function login(db, req, res) {
+function login(db, req, res, next) {
   let fbname = generateUserName();
   db.getConnection((err, dbConn) => {
     if (err) {
-      throw err;
+      next(err);
     } else {
       dbConn.query(
         "INSERT INTO `rank` (`fbname`) VALUES ('" + fbname + "');"
@@ -43,7 +43,7 @@ function login(db, req, res) {
   });
 }
 
-function bindFb(db, req, res) {
+function bindFb(db, req, res, next) {
   console.log("bindFb :" + JSON.stringify(req.body));
   let sid = req.body.sid;
   let fbid = req.body.fbid;
@@ -51,7 +51,7 @@ function bindFb(db, req, res) {
   if (sid > 0) {
     db.getConnection((err, dbConn) => {
       if (err) {
-        throw err;
+        next(err);;
       } else {
         dbConn.query("UPDATE `rank` SET "
           + "`fbid`=" + fbid
@@ -84,7 +84,7 @@ function bindFb(db, req, res) {
     let fbname = generateUserName();
     db.getConnection((err, dbConn) => {
       if (err) {
-        throw err;
+        next(err);;
       } else {
         dbConn.query(
           "INSERT INTO `rank` (`fbid`,`fbname`) VALUES ("
@@ -115,7 +115,7 @@ function bindFb(db, req, res) {
   }
 }
 
-function updateIcon(db, req, res) {
+function updateIcon(db, req, res, next) {
   let fbid = req.body.fbid;
   let fbicon = req.body.fbicon;
   if (fbid < 0 || !fbicon) {
@@ -126,7 +126,7 @@ function updateIcon(db, req, res) {
 
   db.getConnection((err, dbConn) => {
     if (err) {
-      throw err;
+      next(err);;
     } else {
       dbConn.query("UPDATE `rank` SET `fbicon`='" + fbicon
         + "' where `fbid`=" + fbid
@@ -145,7 +145,7 @@ function updateIcon(db, req, res) {
   });
 }
 
-function updateName(db, req, res) {
+function updateName(db, req, res, next) {
   let fbid = req.body.fbid;
   let fbname = req.body.fbname;
   if (fbid < 0 || !fbname) {
@@ -156,7 +156,7 @@ function updateName(db, req, res) {
 
   db.getConnection((err, dbConn) => {
     if (err) {
-      throw err;
+      next(err);;
     } else {
       dbConn.query("UPDATE `rank` SET `fbname`='" + fbname
       + "' where `fbid`=" + fbid
@@ -175,7 +175,7 @@ function updateName(db, req, res) {
   });
 }
 
-function uploadScore(db, req, res) {
+function uploadScore(db, req, res, next) {
   let sid = req.body.sid;
   let score = req.body.score;
   if (sid < 0) {
@@ -187,7 +187,7 @@ function uploadScore(db, req, res) {
 
   db.getConnection((err, dbConn) => {
     if (err) {
-      throw err;
+      next(err);;
     } else {
       dbConn.query("UPDATE `rank` SET `score`='" + score
       + "' where `sid`=" + sid
@@ -206,12 +206,12 @@ function uploadScore(db, req, res) {
   });
 }
 
-function getRankList(db, req, res) {
+function getRankList(db, req, res, next) {
   let sid = req.body.sid;
 
   db.getConnection((err, dbConn) => {
     if (err) {
-      throw err;
+      next(err);;
     } else {
       dbConn.query("SELECT * FROM `rank` WHERE `score` > 0 ORDER BY `score` DESC LIMIT 100", (err, data) => {
         dbConn.release();
@@ -227,7 +227,7 @@ function getRankList(db, req, res) {
   });
 }
 
-function getFriendsRankList(db, req, res) {
+function getFriendsRankList(db, req, res, next) {
   let fbid = req.body.fbid;
   let friends = req.body.friends;
   // 把自己添加进去
@@ -240,7 +240,7 @@ function getFriendsRankList(db, req, res) {
 
   db.getConnection((err, dbConn) => {
     if (err) {
-      throw err;
+      next(err);;
     } else {
       dbConn.query("SELECT * FROM `rank` WHERE `score` > 0 AND `fbid` IN (" + friends + ") ORDER BY `score` DESC LIMIT 100;", (err, data) => {
         dbConn.release();
