@@ -1,0 +1,54 @@
+-- MySQL dump 10.14  Distrib 5.5.56-MariaDB, for Linux (x86_64)
+--
+-- Host: localhost    Database: rollingball
+-- ------------------------------------------------------
+-- Server version	5.5.56-MariaDB
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `rank`
+--
+
+DROP TABLE IF EXISTS `rank`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `rank` (
+  `sid` int(8) unsigned NOT NULL AUTO_INCREMENT,
+  `fbid` bigint(20) unsigned DEFAULT '0',
+  `fbicon` varchar(255) DEFAULT '',
+  `fbname` varchar(100) DEFAULT '',
+  `score` int(10) unsigned DEFAULT '0',
+  PRIMARY KEY (`sid`)
+) ENGINE=InnoDB AUTO_INCREMENT=10000034 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `rank`
+--
+
+LOCK TABLES `rank` WRITE;
+/*!40000 ALTER TABLE `rank` DISABLE KEYS */;
+INSERT INTO `rank` VALUES (10000000,0,'','vPyJ8E9T',17),(10000004,0,'','CI7YiUh7',26466),(10000005,100166760914947,'https://platform-lookaside.fbsbx.com/platform/profilepic/?asid=100166760914947&height=200&width=200&ext=1532159215&hash=AeRSi88s0TDHwZAB','Nino Zhang',392),(10000006,103228083939029,'https://platform-lookaside.fbsbx.com/platform/profilepic/?asid=103228083939029&height=200&width=200&ext=1532160289&hash=AeRFeK5Nu4xFTqdz','Mike Albgeeeabbbjc Okelolason',3204),(10000007,115938975996407,'https://platform-lookaside.fbsbx.com/platform/profilepic/?asid=115938975996407&height=200&width=200&ext=1532165695&hash=AeTRQxxJJzArBcX9','Jennifer Albgdjiaeehfb Lauwitz',112),(10000008,0,'','8Hhx1IWB',39),(10000009,2023916831257276,'https://platform-lookaside.fbsbx.com/platform/profilepic/?asid=2023916831257276&height=200&width=200&ext=1532247347&hash=AeQme4yNHTS5bUhi','徐家伟',22780),(10000010,105624507031104,'https://platform-lookaside.fbsbx.com/platform/profilepic/?asid=105624507031104&height=200&width=200&ext=1532169088&hash=AeT6p1orj3J9TIMz','滕洁',7007),(10000011,0,'','VP35qg2M',5),(10000012,2023916831257276,'https://platform-lookaside.fbsbx.com/platform/profilepic/?asid=2023916831257276&height=200&width=200&ext=1532247347&hash=AeQme4yNHTS5bUhi','徐家伟',7),(10000013,2023916831257276,'https://platform-lookaside.fbsbx.com/platform/profilepic/?asid=2023916831257276&height=200&width=200&ext=1532247347&hash=AeQme4yNHTS5bUhi','徐家伟',7),(10000014,0,'','XpNFDnBE',9),(10000015,0,'','lD7ZCmVM',2),(10000016,0,'','4WeFGlYo',4),(10000017,0,'','JhuyrTA7',4),(10000018,0,'','eIA1l2NC',1),(10000019,0,'','qXJCFKkY',2),(10000020,2023916831257276,'https://platform-lookaside.fbsbx.com/platform/profilepic/?asid=2023916831257276&height=200&width=200&ext=1532247347&hash=AeQme4yNHTS5bUhi','徐家伟',18),(10000021,2023916831257276,'https://platform-lookaside.fbsbx.com/platform/profilepic/?asid=2023916831257276&height=200&width=200&ext=1532247347&hash=AeQme4yNHTS5bUhi','徐家伟',15),(10000022,2023916831257276,'https://platform-lookaside.fbsbx.com/platform/profilepic/?asid=2023916831257276&height=200&width=200&ext=1532247347&hash=AeQme4yNHTS5bUhi','徐家伟',1),(10000023,0,'','kZy7U01i',11),(10000024,2023916831257276,'https://platform-lookaside.fbsbx.com/platform/profilepic/?asid=2023916831257276&height=200&width=200&ext=1532247347&hash=AeQme4yNHTS5bUhi','徐家伟',20),(10000025,0,'','fvft7oaS',0),(10000026,0,'','VY1InmeW',0),(10000027,0,'','c7a1FBxH',0),(10000031,0,'','CEK1gq2i',0),(10000032,0,'','Wq1nt3be',1),(10000033,0,'','XhvVscsa',0);
+/*!40000 ALTER TABLE `rank` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2018-07-24 19:09:39
