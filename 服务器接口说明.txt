@@ -1,13 +1,13 @@
 
 // 获得sid
-curl -X POST http://localhost:3000/login
+curl -l -H "Content-type: application/json" -X POST -d '{"uid":13521389587}' http://localhost:3000/login 
 
 
 // 绑定Fb 尚未获得sid
-curl -l -H "Content-type: application/json" -X POST -d '{"fbid":13521389587,"fbicon":"xxx.png", "fbname":"sky"}' http://localhost:3000/bind_fb 
+curl -l -H "Content-type: application/json" -X POST -d '{"sid":0,"fbid":13521389587,"fbicon":"xxx.png", "fbname":"sky", "uid":123123}' http://localhost:3000/bind_fb 
 
 // 绑定Fb 已经获得sid
-curl -l -H "Content-type: application/json" -X POST -d '{"sid":10000000,"fbid":13521389587,"fbicon":"xxx.png", "fbname":"jim"}' http://localhost:3000/bind_fb 
+curl -l -H "Content-type: application/json" -X POST -d '{"sid":10000109,"fbid":123456789,"fbicon":"xxx.png", "fbname":"jim", "uid":123123}' http://localhost:3000/bind_fb 
 
 // 修改名字
 curl -l -H "Content-type: application/json" -X POST -d '{"fbid":13521389587, "fbname":"xoxo"}' http://localhost:3000/update_name 

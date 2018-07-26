@@ -12,41 +12,69 @@ function generateUserName() {
   return fbname;
 }
 
-function login(db, req, res, next) {
+function __generateSID (db, req, res, next){
   let fbname = generateUserName();
+  let fbid = req.body.fbid;   // 如果存在则是绑定fb同时获取sid，不存在则是登陆获取sid
+  let uid = req.body.uid;
+
+  let queryStr = "INSERT INTO `rank` (`fbname`, `uid`) VALUES ('" + fbname + "','" + uid + "');"
+  if (fbid){
+      queryStr = "INSERT INTO `rank` (`fbid`,`fbname`, `uid`) VALUES ("
+      + fbid
+      + ",'" + fbname + "'"
+      + ",'" + uid + "'"
+      + ");"
+  }
+
+  console.log("uid: " + uid);
   db.getConnection((err, dbConn) => {
     if (err) {
       next(err);
     } else {
-      dbConn.query(
-        "INSERT INTO `rank` (`fbname`) VALUES ('" + fbname + "');"
-        , (err) => {
-          if (err) {
-            console.log(err)
-            res.statusCode = 500;
-            res.send(err.message);
-            dbConn.release();
-          } else {
-            res.statusCode = 200;
-            dbConn.query("select max(`sid`) as sid from `rank`;", (err, data) => {
-              dbConn.release();
+      // 如果之前已经存在该uid的数据，则给他清空数据
+      dbConn.query("DELETE FROM `rank` where `uid` = '" + uid + "'", (err) => {
+        if (err) {
+          console.error(err)
+          res.statusCode = 500;
+          res.send(err.message);
+          dbConn.release();
+        } else {
+          dbConn.query(
+            queryStr
+            , (err) => {
               if (err) {
+                console.error(err)
                 res.statusCode = 500;
                 res.send(err.message);
+                dbConn.release();
               } else {
-                res.send(JSON.stringify({ sid: data[0].sid, fbname: fbname }));
+                res.statusCode = 200;
+                dbConn.query("select max(`sid`) as sid from `rank`;", (err, data) => {
+                  dbConn.release();
+                  if (err) {
+                    res.statusCode = 500;
+                    res.send(err.message);
+                  } else {
+                    res.send(JSON.stringify({ sid: data[0].sid, fbname: fbname }));
+                  }
+                });
               }
             });
-          }
-        });
+        }
+      });
     }
   });
+}
+
+function login(db, req, res, next) {
+  __generateSID(db, req, res, next);
 }
 
 function bindFb(db, req, res, next) {
   console.log("bindFb :" + JSON.stringify(req.body));
   let sid = req.body.sid;
   let fbid = req.body.fbid;
+  let uid = req.body.uid;
 
   if (sid > 0) {
     db.getConnection((err, dbConn) => {
@@ -70,9 +98,14 @@ function bindFb(db, req, res, next) {
                   res.statusCode = 500;
                   res.send(err.message);
                 } else {
-                  res.statusCode = 200;
-                  let obj = { sid: sid, fbname: data[0].fbname };
-                  res.send(JSON.stringify(obj));
+                  if (data.length <= 0 || !data) {
+                    res.statusCode = 500;
+                    res.send("没有对应的数据.sid=" + sid);
+                  } else {
+                    res.statusCode = 200;
+                    let obj = { sid: sid, fbname: data[0].fbname };
+                    res.send(JSON.stringify(obj));
+                  }
                 }
               });
             }
@@ -80,38 +113,7 @@ function bindFb(db, req, res, next) {
       }
     });
   } else {
-    // 尚未分配uid，分配uid
-    let fbname = generateUserName();
-    db.getConnection((err, dbConn) => {
-      if (err) {
-        next(err);;
-      } else {
-        dbConn.query(
-          "INSERT INTO `rank` (`fbid`,`fbname`) VALUES ("
-          + fbid
-          + ",'" + fbname + "'"
-          + ");"
-          , (err) => {
-            if (err) {
-              console.log(err)
-              res.statusCode = 500;
-              res.send(err.message);
-              dbConn.release();
-            } else {
-              res.statusCode = 200;
-              dbConn.query("select max(`sid`) as sid from `rank`;", (err, data) => {
-                dbConn.release();
-                if (err) {
-                  res.statusCode = 500;
-                  res.send(err.message);
-                } else {
-                  res.send(JSON.stringify({ sid: data[0].sid, fbname: fbname }));
-                }
-              });
-            }
-          });
-      }
-    });
+    __generateSID(db, req, res, next);
   }
 }
 
@@ -159,18 +161,18 @@ function updateName(db, req, res, next) {
       next(err);;
     } else {
       dbConn.query("UPDATE `rank` SET `fbname`='" + fbname
-      + "' where `fbid`=" + fbid
-      + ";"
-      , (err) => {
-        dbConn.release();
-        if (err) {
-          res.statusCode = 500;
-          res.send(err.message);
-        } else {
-          res.statusCode = 200;
-          res.send("update fbname ok.");
-        }
-      });
+        + "' where `fbid`=" + fbid
+        + ";"
+        , (err) => {
+          dbConn.release();
+          if (err) {
+            res.statusCode = 500;
+            res.send(err.message);
+          } else {
+            res.statusCode = 200;
+            res.send("update fbname ok.");
+          }
+        });
     }
   });
 }
@@ -190,18 +192,18 @@ function uploadScore(db, req, res, next) {
       next(err);;
     } else {
       dbConn.query("UPDATE `rank` SET `score`='" + score
-      + "' where `sid`=" + sid
-      + ";"
-      , (err) => {
-        dbConn.release();
-        if (err) {
-          res.statusCode = 500;
-          res.send(err.message);
-        } else {
-          res.statusCode = 200;
-          res.send("upload score ok.");
-        }
-      });
+        + "' where `sid`=" + sid
+        + ";"
+        , (err) => {
+          dbConn.release();
+          if (err) {
+            res.statusCode = 500;
+            res.send(err.message);
+          } else {
+            res.statusCode = 200;
+            res.send("upload score ok.");
+          }
+        });
     }
   });
 }

@@ -84,6 +84,7 @@ database.getConnection((err, dbConn) => {
     dbConn.query(
       "CREATE TABLE IF NOT EXISTS `rank` ("
       + "`sid` int(8) unsigned NOT NULL AUTO_INCREMENT, "
+      + "`uid` varchar(255) DEFAULT '', "
       + "`fbid` bigint(20) unsigned DEFAULT 0000000000, "
       + "`fbicon` varchar(255) DEFAULT '', "
       + "`fbname` varchar(100) DEFAULT '', "
