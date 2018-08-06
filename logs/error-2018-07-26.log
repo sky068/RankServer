@@ -1,0 +1,44 @@
+::1 Thu Jul 26 2018 16:19:28 GMT+0800 (CST) POST /login http/1.1 400 curl/7.54.0 SyntaxError: Unexpected token u in JSON at position 1
+    at JSON.parse (<anonymous>)
+    at parse (/Work/rank_server/rolling-farm-server/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Work/rank_server/rolling-farm-server/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Work/rank_server/rolling-farm-server/node_modules/raw-body/index.js:224:16)
+    at done (/Work/rank_server/rolling-farm-server/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Work/rank_server/rolling-farm-server/node_modules/raw-body/index.js:273:7)
+    at emitNone (events.js:106:13)
+    at IncomingMessage.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1064:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+::1 Thu Jul 26 2018 16:20:12 GMT+0800 (CST) POST /login http/1.1 400 curl/7.54.0 SyntaxError: Unexpected token u in JSON at position 1
+    at JSON.parse (<anonymous>)
+    at parse (/Work/rank_server/rolling-farm-server/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Work/rank_server/rolling-farm-server/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Work/rank_server/rolling-farm-server/node_modules/raw-body/index.js:224:16)
+    at done (/Work/rank_server/rolling-farm-server/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Work/rank_server/rolling-farm-server/node_modules/raw-body/index.js:273:7)
+    at emitNone (events.js:106:13)
+    at IncomingMessage.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1064:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+::1 Thu Jul 26 2018 16:20:29 GMT+0800 (CST) POST /login http/1.1 400 curl/7.54.0 SyntaxError: Unexpected token u in JSON at position 1
+    at JSON.parse (<anonymous>)
+    at parse (/Work/rank_server/rolling-farm-server/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Work/rank_server/rolling-farm-server/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Work/rank_server/rolling-farm-server/node_modules/raw-body/index.js:224:16)
+    at done (/Work/rank_server/rolling-farm-server/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Work/rank_server/rolling-farm-server/node_modules/raw-body/index.js:273:7)
+    at emitNone (events.js:106:13)
+    at IncomingMessage.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1064:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+::1 Thu Jul 26 2018 17:12:50 GMT+0800 (CST) POST /bind_fb http/1.1 500 curl/7.54.0 ReferenceError: dbConn is not defined
+    at bindFb (/Work/rank_server/rolling-farm-server/routes/work.js:102:5)
+    at Layer.handle [as handle_request] (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/layer.js:95:5)
+    at /Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:335:12)
+    at next (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:275:10)
+    at /Work/rank_server/rolling-farm-server/app.js:141:5
+    at Layer.handle [as handle_request] (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/layer.js:95:5)
