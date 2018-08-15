@@ -12,10 +12,10 @@ let dbConfig = {
 
   // mark: 插入模拟数据
   let info = [
+      {"name":"せいしゅん","score":"70221","icon":"http://52.44.165.172:3000/images/fb_head_imgs/headimg_42.png"},
       {"name":"野比大雄","score":"77730","icon":"http://52.44.165.172:3000/images/fb_head_imgs/headimg_55.png"},
       {"name":"SHIZUKA","score":"75826","icon":"http://52.44.165.172:3000/images/fb_head_imgs/headimg_52.png"},
       {"name":"Asai Rina","score":"71545","icon":"http://52.44.165.172:3000/images/fb_head_imgs/headimg_66.png"},
-      {"name":"せいしゅん","score":"70221","icon":"http://52.44.165.172:3000/images/fb_head_imgs/headimg_42.png"},
       {"name":"傳奇之子","score":"68965","icon":"http://52.44.165.172:3000/images/fb_head_imgs/headimg_54.png"},
       {"name":"Beetle King","score":"66520","icon":"http://52.44.165.172:3000/images/fb_head_imgs/headimg_13.png"},
       {"name":"周永健","score":"65728","icon":"http://52.44.165.172:3000/images/fb_head_imgs/headimg_49.png"},
