@@ -114,7 +114,8 @@ let info = [
     {"name":"錯誤選擇","score":"4992","icon":"http://52.44.165.172:3000/images/fb_head_imgs/headimg_35.png"},
     {"name":"z2pug7c7","score":"4945","icon":""}
 ];  
-let database = mysql.createPool(dbConfig);
+  
+  let database = mysql.createPool(dbConfig);
   database.getConnection((err, dbConn) => {
   if (err) {
     console.error(err.stack);
