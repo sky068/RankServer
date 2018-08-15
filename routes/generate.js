@@ -4,7 +4,7 @@ let dbConfig = {
     host: "127.0.0.1",
     user: "root",
     password: "Hawkis123",
-    database: "rollingball",
+    database: "funny_farm_blast",
     connectionLimit: 50,
     queueLimit: 0,
     waitForConnection: true
