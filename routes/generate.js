@@ -3,7 +3,7 @@ let mysql = require("mysql");
 let dbConfig = {
     host: "127.0.0.1",
     user: "root",
-    password: "803923",
+    password: "Hawkis123",
     database: "rollingball",
     connectionLimit: 50,
     queueLimit: 0,
