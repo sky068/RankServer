@@ -1,0 +1,201 @@
+::1 Mon Aug 27 2018 10:46:38 GMT+0800 (CST) POST /login http/1.1 500 curl/7.54.0 Error: 数据验证失败，请确认是否修改了游戏数据.
+    at /Work/rank_server/rolling-farm-server/app.js:153:19
+    at Layer.handle [as handle_request] (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:317:13)
+    at /Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:335:12)
+    at next (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:275:10)
+    at /Work/rank_server/rolling-farm-server/app.js:144:5
+    at Layer.handle [as handle_request] (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:317:13)
+    at /Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:284:7
+::1 Mon Aug 27 2018 10:47:08 GMT+0800 (CST) POST /login http/1.1 500 curl/7.54.0 Error: 数据验证失败，请确认是否修改了游戏数据.
+    at /Work/rank_server/rolling-farm-server/app.js:153:19
+    at Layer.handle [as handle_request] (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:317:13)
+    at /Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:335:12)
+    at next (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:275:10)
+    at /Work/rank_server/rolling-farm-server/app.js:144:5
+    at Layer.handle [as handle_request] (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:317:13)
+    at /Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:284:7
+::1 Mon Aug 27 2018 10:48:40 GMT+0800 (CST) POST /login http/1.1 500 curl/7.54.0 Error: 数据验证失败，请确认是否修改了游戏数据.data=[object Object]/n encrypt=
+    at /Work/rank_server/rolling-farm-server/app.js:153:19
+    at Layer.handle [as handle_request] (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:317:13)
+    at /Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:335:12)
+    at next (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:275:10)
+    at /Work/rank_server/rolling-farm-server/app.js:144:5
+    at Layer.handle [as handle_request] (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:317:13)
+    at /Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:284:7
+::1 Mon Aug 27 2018 10:49:26 GMT+0800 (CST) POST /login http/1.1 500 curl/7.54.0 Error: 数据验证失败，请确认是否修改了游戏数据 
+data={"uid":13521389587}/nencrypt=
+    at /Work/rank_server/rolling-farm-server/app.js:153:19
+    at Layer.handle [as handle_request] (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:317:13)
+    at /Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:335:12)
+    at next (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:275:10)
+    at /Work/rank_server/rolling-farm-server/app.js:144:5
+    at Layer.handle [as handle_request] (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:317:13)
+    at /Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:284:7
+::1 Mon Aug 27 2018 10:49:43 GMT+0800 (CST) POST /login http/1.1 500 curl/7.54.0 Error: 数据验证失败，请确认是否修改了游戏数据 
+data={"uid":13521389587}
+encrypt=
+    at /Work/rank_server/rolling-farm-server/app.js:153:19
+    at Layer.handle [as handle_request] (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:317:13)
+    at /Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:335:12)
+    at next (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:275:10)
+    at /Work/rank_server/rolling-farm-server/app.js:144:5
+    at Layer.handle [as handle_request] (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:317:13)
+    at /Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:284:7
+::1 Mon Aug 27 2018 10:51:22 GMT+0800 (CST) POST /login http/1.1 500 curl/7.54.0 Error: 数据验证失败，请确认是否修改了游戏数据 
+data={"uid":13521389587,"encrypt":"050c7cc040e1185305a571b0b3c9bd64"}
+encrypt=050c7cc040e1185305a571b0b3c9bd64
+    at /Work/rank_server/rolling-farm-server/app.js:155:19
+    at Layer.handle [as handle_request] (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:317:13)
+    at /Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:335:12)
+    at next (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:275:10)
+    at /Work/rank_server/rolling-farm-server/app.js:146:5
+    at Layer.handle [as handle_request] (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:317:13)
+    at /Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:284:7
+::1 Mon Aug 27 2018 10:51:31 GMT+0800 (CST) POST /login http/1.1 500 curl/7.54.0 Error: 数据验证失败，请确认是否修改了游戏数据 
+data={"uid":13521389587,"encrypt":"050c7cc040e1185305a571b0b3c9bd64"}
+encrypt=050c7cc040e1185305a571b0b3c9bd64
+    at /Work/rank_server/rolling-farm-server/app.js:155:19
+    at Layer.handle [as handle_request] (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:317:13)
+    at /Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:335:12)
+    at next (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:275:10)
+    at /Work/rank_server/rolling-farm-server/app.js:146:5
+    at Layer.handle [as handle_request] (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:317:13)
+    at /Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:284:7
+::1 Mon Aug 27 2018 10:54:46 GMT+0800 (CST) POST /login http/1.1 500 curl/7.54.0 Error: 数据验证失败，请确认是否修改了游戏数据 
+data={"data":{"uid":13521389587},"encrypt":"050c7cc040e1185305a571b0b3c9bd64"}
+encrypt=050c7cc040e1185305a571b0b3c9bd64
+    at /Work/rank_server/rolling-farm-server/app.js:155:19
+    at Layer.handle [as handle_request] (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:317:13)
+    at /Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:335:12)
+    at next (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:275:10)
+    at /Work/rank_server/rolling-farm-server/app.js:146:5
+    at Layer.handle [as handle_request] (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:317:13)
+    at /Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:284:7
+::1 Mon Aug 27 2018 10:54:58 GMT+0800 (CST) POST /login http/1.1 500 curl/7.54.0 Error: 数据验证失败，请确认是否修改了游戏数据 
+data={"data":{"uid":13521389587},"encrypt":"050c7cc040e1185305a571b0b3c9bd64"}
+encrypt=050c7cc040e1185305a571b0b3c9bd64
+    at /Work/rank_server/rolling-farm-server/app.js:155:19
+    at Layer.handle [as handle_request] (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:317:13)
+    at /Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:335:12)
+    at next (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:275:10)
+    at /Work/rank_server/rolling-farm-server/app.js:146:5
+    at Layer.handle [as handle_request] (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:317:13)
+    at /Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:284:7
+::1 Mon Aug 27 2018 11:14:52 GMT+0800 (CST) POST /login http/1.1 500 Cocos%20Simulator/20180528 CFNetwork/902.1 Darwin/17.7.0 (x86_64) Error: 数据验证失败，请确认是否修改了游戏数据 
+data={"data":{"uid":"Mon, 27 Aug 2018 03:14:51 GMT"},"encrypt":"2cc5b82865ddc246ece5b0dda32a73f0"}
+encrypt=2cc5b82865ddc246ece5b0dda32a73f0
+    at /Work/rank_server/rolling-farm-server/app.js:152:19
+    at Layer.handle [as handle_request] (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:317:13)
+    at /Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:335:12)
+    at next (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:275:10)
+    at /Work/rank_server/rolling-farm-server/app.js:142:5
+    at Layer.handle [as handle_request] (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:317:13)
+    at /Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:284:7
+::1 Mon Aug 27 2018 11:15:02 GMT+0800 (CST) POST /login http/1.1 500 Cocos%20Simulator/20180528 CFNetwork/902.1 Darwin/17.7.0 (x86_64) Error: 数据验证失败，请确认是否修改了游戏数据 
+data={"data":{"uid":"Mon, 27 Aug 2018 03:15:02 GMT"},"encrypt":"d1ef4806b1dceef3fb570daf4041db58"}
+encrypt=d1ef4806b1dceef3fb570daf4041db58
+    at /Work/rank_server/rolling-farm-server/app.js:152:19
+    at Layer.handle [as handle_request] (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:317:13)
+    at /Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:335:12)
+    at next (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:275:10)
+    at /Work/rank_server/rolling-farm-server/app.js:142:5
+    at Layer.handle [as handle_request] (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:317:13)
+    at /Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:284:7
+::1 Mon Aug 27 2018 11:15:12 GMT+0800 (CST) POST /login http/1.1 500 Cocos%20Simulator/20180528 CFNetwork/902.1 Darwin/17.7.0 (x86_64) Error: 数据验证失败，请确认是否修改了游戏数据 
+data={"data":{"uid":"Mon, 27 Aug 2018 03:15:12 GMT"},"encrypt":"fa07685269e757ef006da77b36170586"}
+encrypt=fa07685269e757ef006da77b36170586
+    at /Work/rank_server/rolling-farm-server/app.js:152:19
+    at Layer.handle [as handle_request] (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:317:13)
+    at /Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:335:12)
+    at next (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:275:10)
+    at /Work/rank_server/rolling-farm-server/app.js:142:5
+    at Layer.handle [as handle_request] (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:317:13)
+    at /Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:284:7
+::1 Mon Aug 27 2018 11:15:22 GMT+0800 (CST) POST /login http/1.1 500 Cocos%20Simulator/20180528 CFNetwork/902.1 Darwin/17.7.0 (x86_64) Error: 数据验证失败，请确认是否修改了游戏数据 
+data={"data":{"uid":"Mon, 27 Aug 2018 03:15:22 GMT"},"encrypt":"64662b2ff012e15e76011722ba7e3bdd"}
+encrypt=64662b2ff012e15e76011722ba7e3bdd
+    at /Work/rank_server/rolling-farm-server/app.js:152:19
+    at Layer.handle [as handle_request] (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:317:13)
+    at /Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:335:12)
+    at next (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:275:10)
+    at /Work/rank_server/rolling-farm-server/app.js:142:5
+    at Layer.handle [as handle_request] (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:317:13)
+    at /Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:284:7
+::1 Mon Aug 27 2018 11:15:32 GMT+0800 (CST) POST /login http/1.1 500 Cocos%20Simulator/20180528 CFNetwork/902.1 Darwin/17.7.0 (x86_64) Error: 数据验证失败，请确认是否修改了游戏数据 
+data={"data":{"uid":"Mon, 27 Aug 2018 03:15:32 GMT"},"encrypt":"b2a54083f0a1f5a8ebf5a3275b09551e"}
+encrypt=b2a54083f0a1f5a8ebf5a3275b09551e
+    at /Work/rank_server/rolling-farm-server/app.js:152:19
+    at Layer.handle [as handle_request] (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:317:13)
+    at /Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:335:12)
+    at next (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:275:10)
+    at /Work/rank_server/rolling-farm-server/app.js:142:5
+    at Layer.handle [as handle_request] (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:317:13)
+    at /Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:284:7
+::1 Mon Aug 27 2018 11:25:07 GMT+0800 (CST) POST /login http/1.1 500 Cocos%20Simulator/20180528 CFNetwork/902.1 Darwin/17.7.0 (x86_64) Error: 数据验证失败，请确认是否修改了游戏数据 
+data={"data":"{\"uid\":\"Mon, 27 Aug 2018 03:21:03 GMT\"}","encrypt":"aaf4fe09f76373bd306280c716ef7e0b"}
+encrypt=aaf4fe09f76373bd306280c716ef7e0b
+    at /Work/rank_server/rolling-farm-server/app.js:152:19
+    at Layer.handle [as handle_request] (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:317:13)
+    at /Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:335:12)
+    at next (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:275:10)
+    at /Work/rank_server/rolling-farm-server/app.js:142:5
+    at Layer.handle [as handle_request] (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:317:13)
+    at /Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:284:7
+::1 Mon Aug 27 2018 11:25:10 GMT+0800 (CST) POST /login http/1.1 500 Cocos%20Simulator/20180528 CFNetwork/902.1 Darwin/17.7.0 (x86_64) Error: 数据验证失败，请确认是否修改了游戏数据 
+data={"data":"{\"uid\":\"Mon, 27 Aug 2018 03:21:23 GMT\"}","encrypt":"a3535e84d1d05a08f247bf099e6385d7"}
+encrypt=a3535e84d1d05a08f247bf099e6385d7
+    at /Work/rank_server/rolling-farm-server/app.js:152:19
+    at Layer.handle [as handle_request] (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:317:13)
+    at /Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:335:12)
+    at next (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:275:10)
+    at /Work/rank_server/rolling-farm-server/app.js:142:5
+    at Layer.handle [as handle_request] (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:317:13)
+    at /Work/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:284:7
