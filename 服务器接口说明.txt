@@ -1,10 +1,10 @@
 
 // 获得sid
-curl -l -H "Content-type: application/json" -X POST -d '{"data":{"uid":13521389587},"encrypt":"050c7cc040e1185305a571b0b3c9bd64", }' http://localhost:3000/login 
+curl -l -H "Content-type: application/json" -X POST -d '{"data":{"uid":13521389587},"encrypt":"050c7cc040e1185305a571b0b3c9bd64", "version": "v2.0.0"}' http://localhost:3000/login 
 
 
 // 绑定Fb 尚未获得sid
-curl -l -H "Content-type: application/json" -X POST -d '{"sid":0,"fbid":13521389587,"fbicon":"xxx.png", "fbname":"sky", "uid":123123}' http://localhost:3000/bind_fb 
+curl -l -H "Content-type: application/json" -X POST -d '{"data":{"sid":0,"fbid":13521389587,"fbicon":"xxx.png", "fbname":"sky", "uid":123123}}' http://localhost:3000/bind_fb 
 
 // 绑定Fb 已经获得sid
 curl -l -H "Content-type: application/json" -X POST -d '{"sid":10000109,"fbid":123456789,"fbicon":"xxx.png", "fbname":"jim", "uid":123123}' http://localhost:3000/bind_fb 

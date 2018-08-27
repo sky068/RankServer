@@ -28,3 +28,6 @@
 ::1 - - [27/Aug/2018:03:38:23 +0000] "POST /upload_score HTTP/1.1" 500 64 "-" "Cocos%20Simulator/20180528 CFNetwork/902.1 Darwin/17.7.0 (x86_64)"
 ::1 - - [27/Aug/2018:03:39:24 +0000] "POST /upload_score HTTP/1.1" 200 16 "-" "Cocos%20Simulator/20180528 CFNetwork/902.1 Darwin/17.7.0 (x86_64)"
 ::1 - - [27/Aug/2018:03:39:55 +0000] "POST /upload_score HTTP/1.1" 200 16 "-" "Cocos%20Simulator/20180528 CFNetwork/902.1 Darwin/17.7.0 (x86_64)"
+::1 - - [27/Aug/2018:03:49:08 +0000] "POST /upload_score HTTP/1.1" - - "-" "Cocos%20Simulator/20180528 CFNetwork/902.1 Darwin/17.7.0 (x86_64)"
+::1 - - [27/Aug/2018:03:49:20 +0000] "POST /upload_score HTTP/1.1" 200 16 "-" "Cocos%20Simulator/20180528 CFNetwork/902.1 Darwin/17.7.0 (x86_64)"
+::1 - - [27/Aug/2018:03:51:34 +0000] "POST /login HTTP/1.1" 200 36 "-" "Cocos%20Simulator/20180528 CFNetwork/902.1 Darwin/17.7.0 (x86_64)"

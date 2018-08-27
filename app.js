@@ -152,11 +152,11 @@ app.use(function(req, res, next){
     }
 
     let encrypt = req.body.encrypt || "";
-    let cur = md5(encryptKey, req.body.data);
+    let cur = md5(encryptKey, JSON.stringify(req.body.data));
     if (cur != encrypt){
       return next(new Error('数据验证失败，请确认是否修改了游戏数据 \n' + 'data=' + JSON.stringify(req.body) + "\n" + "encrypt=" + encrypt));
     } 
-    req.body = JSON.parse(req.body.data);
+    req.body = req.body.data;
     next();
 });
 // 设置/routes/index文件为总的路由控制文件
