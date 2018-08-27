@@ -7,6 +7,7 @@ let router = require('./routes/index');
 let mysql = require("mysql");
 let fs = require('fs');
 let fileStreamRotator = require('file-stream-rotator');
+let md5 = require('./encrypt/Md5').md5_hex_hmac;
 
 // 记录日志到文件
 let logDirectory = __dirname + "/logs";
@@ -142,6 +143,22 @@ app.use(function (req, res, next) {
   }
 });
 
+// 加密校验 md5_hex_hmac 
+let encryptKey = 'tclsafegame';
+app.use(function(req, res, next){
+    // 旧版本不校验
+    if (!req.body.version){
+       return next();
+    }
+
+    let encrypt = req.body.encrypt || "";
+    let cur = md5(encryptKey, req.body.data);
+    if (cur != encrypt){
+      return next(new Error('数据验证失败，请确认是否修改了游戏数据 \n' + 'data=' + JSON.stringify(req.body) + "\n" + "encrypt=" + encrypt));
+    } 
+    req.body = JSON.parse(req.body.data);
+    next();
+});
 // 设置/routes/index文件为总的路由控制文件
 // 在index文件中再进行统一的路由分发
 router(app, database);

@@ -1,6 +1,6 @@
 
 // 获得sid
-curl -l -H "Content-type: application/json" -X POST -d '{"uid":13521389587}' http://localhost:3000/login 
+curl -l -H "Content-type: application/json" -X POST -d '{"data":{"uid":13521389587},"encrypt":"050c7cc040e1185305a571b0b3c9bd64", }' http://localhost:3000/login 
 
 
 // 绑定Fb 尚未获得sid
