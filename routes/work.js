@@ -120,7 +120,7 @@ function bindFb(db, req, res, next) {
 function updateIcon(db, req, res, next) {
   let fbid = req.body.fbid;
   let fbicon = req.body.fbicon;
-  if (fbid < 0 || !fbicon) {
+  if (fbid <= 0 || !fbicon) {
     res.statusCode = 500;
     res.send("invalid fbid.");
     return;
@@ -150,7 +150,7 @@ function updateIcon(db, req, res, next) {
 function updateName(db, req, res, next) {
   let fbid = req.body.fbid;
   let fbname = req.body.fbname;
-  if (fbid < 0 || !fbname) {
+  if (fbid <= 0 || !fbname) {
     res.statusCode = 500;
     res.send("invalid fbid.");
     return;
@@ -180,7 +180,7 @@ function updateName(db, req, res, next) {
 function uploadScore(db, req, res, next) {
   let sid = req.body.sid;
   let score = req.body.score;
-  if (sid < 0) {
+  if (sid <= 0) {
     // 尚未获得sid
     res.statusCode = 500;
     res.send("invalid sid.");
