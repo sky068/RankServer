@@ -4,22 +4,22 @@ curl -l -H "Content-type: application/json" -X POST -d '{"data":{"uid":135213895
 
 
 // 绑定Fb 尚未获得sid
-curl -l -H "Content-type: application/json" -X POST -d '{"data":{"sid":0,"fbid":13521389587,"fbicon":"xxx.png", "fbname":"sky", "uid":123123}}' http://localhost:3000/bind_fb 
+curl -l -H "Content-type: application/json" -X POST -d '{"data":{"sid":0,"fbid":13521389587,"fbicon":"xxx.png", "fbname":"sky", "uid":123123},"encrypt":"050c7cc040e1185305a571b0b3c9bd64", "version": "v2.0.0"}' http://localhost:3000/bind_fb 
 
 // 绑定Fb 已经获得sid
-curl -l -H "Content-type: application/json" -X POST -d '{"sid":10000109,"fbid":123456789,"fbicon":"xxx.png", "fbname":"jim", "uid":123123}' http://localhost:3000/bind_fb 
+curl -l -H "Content-type: application/json" -X POST -d '{"data":{"sid":10000109,"fbid":123456789,"fbicon":"xxx.png", "fbname":"jim", "uid":123123},"encrypt":"050c7cc040e1185305a571b0b3c9bd64", "version": "v2.0.0"}' http://localhost:3000/bind_fb 
 
 // 修改名字
-curl -l -H "Content-type: application/json" -X POST -d '{"fbid":13521389587, "fbname":"xoxo"}' http://localhost:3000/update_name 
+curl -l -H "Content-type: application/json" -X POST -d '{"data":{"fbid":13521389587, "fbname":"xoxo"}, "encrypt":"050c7cc040e1185305a571b0b3c9bd64", "version": "v2.0.0"}' http://localhost:3000/update_name 
 
 // 修改图像
-curl -l -H "Content-type: application/json" -X POST -d '{"fbid":13521389587, "fbicon":"xoxo.png"}' http://localhost:3000/update_icon
+curl -l -H "Content-type: application/json" -X POST -d '{"data":{"fbid":13521389587, "fbicon":"xoxo.png"}, "encrypt":"050c7cc040e1185305a571b0b3c9bd64", "version": "v2.0.0"}' http://localhost:3000/update_icon
 
 // 上传分数
-curl -l -H "Content-type: application/json" -X POST -d '{"sid":10000000, "score":999}' http://localhost:3000/upload_score
+curl -l -H "Content-type: application/json" -X POST -d '{"data":{"sid":10000000, "score":999}, "encrypt":"050c7cc040e1185305a571b0b3c9bd64", "version": "v2.0.0"}' http://localhost:3000/upload_score
 
 // 获取排行
- curl -l -H "Content-type: application/json" -X POST -d '{"sid":10000000}' http://localhost:3000/get_rank
+ curl -l -H "Content-type: application/json" -X POST -d '{"data":{"sid":10000000}, "encrypt":"050c7cc040e1185305a571b0b3c9bd64", "version": "v2.0.0"}' http://localhost:3000/get_rank
 
  // 获取好友排行
-  curl -l -H "Content-type: application/json" -X POST -d '{"fid": 10000000, "friends": [10000000,10000001]}' http://localhost:3000/get_rank_friends
+  curl -l -H "Content-type: application/json" -X POST -d '{"data":{"fid": 10000000, "friends": [10000000,10000001]}, "encrypt":"050c7cc040e1185305a571b0b3c9bd64", "version": "v2.0.0"}' http://localhost:3000/get_rank_friends
