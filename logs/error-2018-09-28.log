@@ -1,0 +1,251 @@
+::ffff:127.0.0.1 Fri Sep 28 2018 17:10:44 GMT+0800 (CST) POST /login http/1.1 500 curl/7.54.0 Error: 数据验证失败，请确认是否修改了游戏数据 
+data={"data":{"uid":13521389587},"encrypt":"050c7cc040e1185305a571b0b3c9bd64","version":"v2.0.0"}
+encrypt=050c7cc040e1185305a571b0b3c9bd64
+    at /Users/skyxu/Dropbox/rank_server/rolling-farm-server/app.js:76:19
+    at Layer.handle [as handle_request] (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:317:13)
+    at /Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:275:10)
+    at /Users/skyxu/Dropbox/rank_server/rolling-farm-server/app.js:61:5
+    at Layer.handle [as handle_request] (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:317:13)
+    at /Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:275:10)
+    at serveStatic (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/serve-static/index.js:75:16)
+    at Layer.handle [as handle_request] (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:317:13)
+    at /Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:284:7
+::ffff:127.0.0.1 Fri Sep 28 2018 17:12:25 GMT+0800 (CST) POST /login http/1.1 500 curl/7.54.0 Error: 数据验证失败，请确认是否修改了游戏数据 
+data={"data":{"uid":13521389587},"encrypt":"050c7cc040e1185305a571b0b3c9bd64","version":"v2.0.0"}
+encrypt=050c7cc040e1185305a571b0b3c9bd64
+    at /Users/skyxu/Dropbox/rank_server/rolling-farm-server/app.js:76:19
+    at Layer.handle [as handle_request] (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:317:13)
+    at /Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:275:10)
+    at /Users/skyxu/Dropbox/rank_server/rolling-farm-server/app.js:61:5
+    at Layer.handle [as handle_request] (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:317:13)
+    at /Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:275:10)
+    at serveStatic (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/serve-static/index.js:75:16)
+    at Layer.handle [as handle_request] (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:317:13)
+    at /Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:284:7
+::ffff:127.0.0.1 Fri Sep 28 2018 17:12:29 GMT+0800 (CST) POST /login http/1.1 404 curl/7.54.0 NotFoundError: Not Found
+    at /Users/skyxu/Dropbox/rank_server/rolling-farm-server/app.js:116:8
+    at Layer.handle [as handle_request] (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:317:13)
+    at /Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:275:10)
+    at /Users/skyxu/Dropbox/rank_server/rolling-farm-server/app.js:79:5
+    at Layer.handle [as handle_request] (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:317:13)
+    at /Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:275:10)
+    at /Users/skyxu/Dropbox/rank_server/rolling-farm-server/app.js:61:5
+    at Layer.handle [as handle_request] (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:317:13)
+    at /Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:284:7
+::ffff:127.0.0.1 Fri Sep 28 2018 17:12:38 GMT+0800 (CST) POST /login http/1.1 404 curl/7.54.0 NotFoundError: Not Found
+    at /Users/skyxu/Dropbox/rank_server/rolling-farm-server/app.js:116:8
+    at Layer.handle [as handle_request] (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:317:13)
+    at /Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:275:10)
+    at /Users/skyxu/Dropbox/rank_server/rolling-farm-server/app.js:79:5
+    at Layer.handle [as handle_request] (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:317:13)
+    at /Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:275:10)
+    at /Users/skyxu/Dropbox/rank_server/rolling-farm-server/app.js:61:5
+    at Layer.handle [as handle_request] (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:317:13)
+    at /Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:284:7
+::ffff:127.0.0.1 Fri Sep 28 2018 17:12:47 GMT+0800 (CST) POST /login http/1.1 404 curl/7.54.0 NotFoundError: Not Found
+    at /Users/skyxu/Dropbox/rank_server/rolling-farm-server/app.js:116:8
+    at Layer.handle [as handle_request] (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:317:13)
+    at /Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:275:10)
+    at /Users/skyxu/Dropbox/rank_server/rolling-farm-server/app.js:79:5
+    at Layer.handle [as handle_request] (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:317:13)
+    at /Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:275:10)
+    at /Users/skyxu/Dropbox/rank_server/rolling-farm-server/app.js:61:5
+    at Layer.handle [as handle_request] (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:317:13)
+    at /Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:284:7
+::ffff:127.0.0.1 Fri Sep 28 2018 17:13:52 GMT+0800 (CST) POST /login http/1.1 404 curl/7.54.0 NotFoundError: Not Found
+    at /Users/skyxu/Dropbox/rank_server/rolling-farm-server/app.js:116:8
+    at Layer.handle [as handle_request] (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:317:13)
+    at /Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:275:10)
+    at /Users/skyxu/Dropbox/rank_server/rolling-farm-server/app.js:79:5
+    at Layer.handle [as handle_request] (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:317:13)
+    at /Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:275:10)
+    at /Users/skyxu/Dropbox/rank_server/rolling-farm-server/app.js:61:5
+    at Layer.handle [as handle_request] (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:317:13)
+    at /Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:284:7
+::ffff:127.0.0.1 Fri Sep 28 2018 17:18:45 GMT+0800 (CST) POST /bind_fb http/1.1 500 curl/7.54.0 Error: 数据验证失败，请确认是否修改了游戏数据 
+data={"data":{"sid":0,"fbid":13521389587,"fbicon":"xxx.png","fbname":"sky","uid":123123},"encrypt":"050c7cc040e1185305a571b0b3c9bd64","version":"v2.0.0"}
+encrypt=050c7cc040e1185305a571b0b3c9bd64
+    at /Users/skyxu/Dropbox/rank_server/rolling-farm-server/app.js:76:19
+    at Layer.handle [as handle_request] (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:317:13)
+    at /Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:275:10)
+    at /Users/skyxu/Dropbox/rank_server/rolling-farm-server/app.js:61:5
+    at Layer.handle [as handle_request] (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:317:13)
+    at /Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:275:10)
+    at serveStatic (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/serve-static/index.js:75:16)
+    at Layer.handle [as handle_request] (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:317:13)
+    at /Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:284:7
+::ffff:127.0.0.1 Fri Sep 28 2018 17:20:02 GMT+0800 (CST) POST /bind_fbcurl http/1.1 400 curl/7.54.0 SyntaxError: Unexpected token & in JSON at position 152
+    at JSON.parse (<anonymous>)
+    at parse (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/raw-body/index.js:224:16)
+    at done (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/raw-body/index.js:273:7)
+    at emitNone (events.js:106:13)
+    at IncomingMessage.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1064:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+::ffff:127.0.0.1 Fri Sep 28 2018 17:20:02 GMT+0800 (CST) POST /bind_fb http/1.1 400 curl/7.54.0 SyntaxError: Unexpected token & in JSON at position 152
+    at JSON.parse (<anonymous>)
+    at parse (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/raw-body/index.js:224:16)
+    at done (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/raw-body/index.js:273:7)
+    at emitNone (events.js:106:13)
+    at IncomingMessage.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1064:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+::ffff:127.0.0.1 Fri Sep 28 2018 17:22:20 GMT+0800 (CST) POST /bind_fb http/1.1 500 curl/7.54.0 ReferenceError: db is not defined
+    at bindFb (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/routes/work.js:79:19)
+    at Layer.handle [as handle_request] (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:275:10)
+    at /Users/skyxu/Dropbox/rank_server/rolling-farm-server/app.js:69:3
+    at Layer.handle [as handle_request] (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:317:13)
+    at /Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:275:10)
+    at /Users/skyxu/Dropbox/rank_server/rolling-farm-server/app.js:61:5
+    at Layer.handle [as handle_request] (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/layer.js:95:5)
+::ffff:127.0.0.1 Fri Sep 28 2018 18:13:38 GMT+0800 (CST) POST /upload_scor http/1.1 404 curl/7.54.0 NotFoundError: Not Found
+    at /Users/skyxu/Dropbox/rank_server/rolling-farm-server/app.js:104:10
+    at Layer.handle [as handle_request] (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:317:13)
+    at /Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:275:10)
+    at /Users/skyxu/Dropbox/rank_server/rolling-farm-server/app.js:69:3
+    at Layer.handle [as handle_request] (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:317:13)
+    at /Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:275:10)
+    at /Users/skyxu/Dropbox/rank_server/rolling-farm-server/app.js:61:5
+    at Layer.handle [as handle_request] (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:317:13)
+    at /Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:284:7
+::ffff:127.0.0.1 Fri Sep 28 2018 18:15:04 GMT+0800 (CST) POST /upload_scor http/1.1 404 curl/7.54.0 NotFoundError: Not Found
+    at /Users/skyxu/Dropbox/rank_server/rolling-farm-server/app.js:104:10
+    at Layer.handle [as handle_request] (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:317:13)
+    at /Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:275:10)
+    at /Users/skyxu/Dropbox/rank_server/rolling-farm-server/app.js:69:3
+    at Layer.handle [as handle_request] (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:317:13)
+    at /Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:275:10)
+    at /Users/skyxu/Dropbox/rank_server/rolling-farm-server/app.js:61:5
+    at Layer.handle [as handle_request] (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:317:13)
+    at /Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:284:7
+::ffff:127.0.0.1 Fri Sep 28 2018 18:15:26 GMT+0800 (CST) POST /upload_scor http/1.1 404 curl/7.54.0 NotFoundError: Not Found
+    at /Users/skyxu/Dropbox/rank_server/rolling-farm-server/app.js:104:10
+    at Layer.handle [as handle_request] (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:317:13)
+    at /Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:275:10)
+    at /Users/skyxu/Dropbox/rank_server/rolling-farm-server/app.js:69:3
+    at Layer.handle [as handle_request] (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:317:13)
+    at /Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:275:10)
+    at /Users/skyxu/Dropbox/rank_server/rolling-farm-server/app.js:61:5
+    at Layer.handle [as handle_request] (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:317:13)
+    at /Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:284:7
+::ffff:127.0.0.1 Fri Sep 28 2018 18:15:50 GMT+0800 (CST) POST /upload_scor http/1.1 404 curl/7.54.0 NotFoundError: Not Found
+    at /Users/skyxu/Dropbox/rank_server/rolling-farm-server/app.js:104:10
+    at Layer.handle [as handle_request] (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:317:13)
+    at /Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:275:10)
+    at /Users/skyxu/Dropbox/rank_server/rolling-farm-server/app.js:69:3
+    at Layer.handle [as handle_request] (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:317:13)
+    at /Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:275:10)
+    at /Users/skyxu/Dropbox/rank_server/rolling-farm-server/app.js:61:5
+    at Layer.handle [as handle_request] (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:317:13)
+    at /Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:284:7
+::ffff:127.0.0.1 Fri Sep 28 2018 18:17:10 GMT+0800 (CST) POST /get_rank http/1.1 500 curl/7.54.0 ReferenceError: data is not defined
+    at getRankList (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/routes/work.js:163:14)
+    at Layer.handle [as handle_request] (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:275:10)
+    at /Users/skyxu/Dropbox/rank_server/rolling-farm-server/app.js:69:3
+    at Layer.handle [as handle_request] (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:317:13)
+    at /Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/index.js:275:10)
+    at /Users/skyxu/Dropbox/rank_server/rolling-farm-server/app.js:61:5
+    at Layer.handle [as handle_request] (/Users/skyxu/Dropbox/rank_server/rolling-farm-server/node_modules/express/lib/router/layer.js:95:5)
