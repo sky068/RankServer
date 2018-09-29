@@ -1,4 +1,5 @@
 {
   "showBannerInGame": false,
-  "afterPlayAdsInfo": "1,1;2,1"
+  "afterPlayAdsInfo": [{"adType": 1, "adNum": 1}, {"adType": 2, "adNum": 1}],
+  "showAfterPlayAdGap": 2
 }
